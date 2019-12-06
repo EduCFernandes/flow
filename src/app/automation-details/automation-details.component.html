@@ -1,0 +1,11 @@
+<div class="topbar">
+  <div class="container-fluid">
+    <h1>My Automation</h1>
+  </div>
+</div>
+
+<div class="container-fluid py-4">
+  <ng-container *ngIf="selectedView === 'FLOW'">
+    <app-automation-flow-page></app-automation-flow-page>
+  </ng-container>
+</div>

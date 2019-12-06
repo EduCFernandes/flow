@@ -1,0 +1,29 @@
+<svg class="line" *ngIf="type === 'conditional-top'">
+  <path fill="none" d="
+          M 1,0
+          v 15
+          t 0 6 6 6 
+          h 52
+          t 6,0 6,6
+          v 15"></path>
+</svg>
+
+
+<svg class="line" *ngIf="type === 'conditional-bottom'">
+  <path fill="none" d="
+        M 71,0
+        v 18
+        q 0,6 -6,6
+        h -58
+        q -6,0 -6,6"></path>
+</svg>
+
+
+<svg class="line" *ngIf="type === 'for-loop-top'">
+  <path fill=" none" d="M 1,0 v 15 t 0 6 6 6 h 52 t 6,0 6,6 v 15"></path>
+  <path fill="none" d="M 1,52 L 1,45 Q 1,40 10,40 L 30,40"></path>
+</svg>
+
+<svg class="line" *ngIf="type === 'for-loop-bottom'">
+  <path fill="none" d="M 71,0 v 18 q 0,6 -6,6 h -58 q -6,0 -6 -6 v 8"></path>
+</svg>

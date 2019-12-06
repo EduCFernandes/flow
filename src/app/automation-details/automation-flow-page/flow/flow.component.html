@@ -1,0 +1,70 @@
+<div class="flow-steps">
+
+
+  <div class="flow-step flow-step--action">
+    <div class="flow-step__header">
+      <div class="flow-step__image">
+      </div>
+      <div class="flow-step__info">
+        <h2 class="flow-step__title">Action step</h2>
+        <span>Description</span>
+      </div>
+    </div>
+    <div class="flow-step__simple-arrow-wrapper">
+      <div class="add-button"></div>
+      <div class="arrow arrow--down"></div>
+    </div>
+  </div>
+
+
+  <div class="flow-step flow-step--conditional">
+    <div class="flow-step__header">
+      <div class="flow-step__image"></div>
+      <div class="flow-step__info">
+        <h2 class="flow-step__title">Conditional step</h2>
+        <span>Description</span>
+      </div>
+    </div>
+    <div class="flow-step__branch-arrow-wrapper flow-step__branch-arrow-wrapper--top">
+      <svg-lines [type]="'conditional-top'"></svg-lines>
+      <div class="arrow arrow--down"></div>
+      <div class="add-button add-button--single"></div>
+      <!-- <div class="add-button"></div> -->
+      <label class="conditional-label yes-label">Yes</label>
+      <label class="conditional-label no-label">No</label>
+    </div>
+    <div class="flow-step__branch-arrow-wrapper flow-step__branch-arrow-wrapper--bottom">
+      <svg-lines [type]="'conditional-bottom'"></svg-lines>
+      <!-- <div class="add-button"></div> -->
+    </div>
+  </div>
+
+
+  <div class="flow-step flow-step--for-loop">
+    <div class="flow-step__header">
+      <div class="flow-step__image"></div>
+      <div class="flow-step__info">
+        <h2 class="flow-step__title">For loop step</h2>
+        <span>Description</span>
+      </div>
+    </div>
+    <div class="flow-step__branch-arrow-wrapper flow-step__branch-arrow-wrapper--top">
+      <svg-lines [type]="'for-loop-top'"></svg-lines>
+      <div class="arrow arrow--down"></div>
+      <div class="arrow arrow--right"></div>
+      <!-- <div class="add-button"></div> -->
+      <div class="add-button add-button--single"></div>
+    </div>
+    <div class="flow-step__branch-arrow-wrapper flow-step__branch-arrow-wrapper--bottom">
+      <svg-lines [type]="'for-loop-bottom'"></svg-lines>
+      <!-- <div class="add-button"></div> -->
+    </div>
+  </div>
+
+
+  <div class="flow-step">
+    <div class="flow-step__simple-arrow-wrapper">
+      <div class="add-button add-button--principal"></div>
+    </div>
+  </div>
+</div>
